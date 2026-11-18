@@ -1,0 +1,9 @@
+name: act_simple
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      # requirements.txt pins the official PyTorch CUDA 12.8 wheels.
+      - -r requirements.txt

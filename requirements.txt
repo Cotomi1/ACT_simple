@@ -1,0 +1,15 @@
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+robosuite==1.5.2
+mujoco==3.3.7
+h5py==3.15.1
+lerobot==0.3.3
+# Windows CUDA wheels include the runtime needed by ACT on Blackwell GPUs.
+torch==2.7.1+cu128
+torchvision==0.22.1+cu128
+# Robosuite 1.5.2's mink requires NumPy below 2.
+numpy==1.26.4
+# Both distributions supply cv2; use matching builds for the two upstream requirements.
+opencv-python==4.11.0.86
+opencv-python-headless==4.11.0.86
+matplotlib==3.10.8
